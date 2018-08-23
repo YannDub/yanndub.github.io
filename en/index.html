@@ -22,7 +22,12 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <div class="index_title">
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <div class="date">
+          written on {{ post.date }}
+        </div>
+      </div>
 
       <div class="entry">
         {{ post.excerpt }}
