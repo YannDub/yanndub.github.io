@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<section class="section-main-header">
+  <div class="container">
+    <div class="index_title">
+      <h1>Who am I ?</h1>
+    </div>
+    <div class="index_description">
+      <p>Hi! My name is Yann, I am 23 and I live at Lille in France. I work for a company that make hologram projector, <a href="https://holusion.com/en/">Holusion</a>.</p>
+
+      <p>
+        In this website you will found some of my project with explanation to use it. You will found blog posts around my work, for example, you could found post mortem of a 
+        project, explanation about a specific mechanism of one of my created games. We will talking about computer science and everything aroud this topic (so probably everything and anything)
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section-post">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <div class="index_title">
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <div class="date">
+          written on {{ post.date }}
+        </div>
+      </div>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</section>
