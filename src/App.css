@@ -1,11 +1,9 @@
 header {
   background-color: #fff;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  z-index: 3;
+  width: 100%;
+  top: 0;
 }
 
 header div {
@@ -14,7 +12,7 @@ header div {
 
 header a {
   text-decoration: none;
-  color: #444
+  color: #444;
 }
 
 header .title {
@@ -53,6 +51,28 @@ header li a:hover {
   background-color: #f4f4f4;
 }
 
+.desktop {
+  display: none;
+}
+
+.responsive {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.responsive .nav {
+  text-align: right;
+  padding: 16px;
+  display: block;
+}
+
+.responsive .menu li {
+  border-bottom: 1px solid lightgrey;
+}
+
 footer {
   background-color: #fff;
   padding: 20px;
@@ -70,5 +90,17 @@ footer {
   header ul {
     clear: none;
     max-height: none;
+  }
+
+  .desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .responsive {
+    display: none;
   }
 }

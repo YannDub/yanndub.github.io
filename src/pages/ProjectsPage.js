@@ -6,8 +6,8 @@ import jsonToMarkdown from '../utils/jsonToMarkdown';
 
 export default class ProjectsPage extends React.Component {
     render() {
-        return projects.projects.map(obj => {
-            return <div className="row">
+        return projects.projects.map((obj, key) => {
+            return <div key={key} className="row">
                 <div className="col-2"></div>
                 <div className="col-8">
                     <ProjectPanel title={obj.title} resume={jsonToMarkdown(obj.resume)} img={obj.img} text={jsonToMarkdown(obj.text)}/>
