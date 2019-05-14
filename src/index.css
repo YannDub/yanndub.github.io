@@ -18,6 +18,8 @@ code {
 [class*="col-"] {
   /*Mobile first: set the width to 100% by default*/
   width: 100%;
+  margin: 0 auto;
+  margin-top: 1px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -27,12 +29,6 @@ code {
   
   [class*="col-"] {
     float: left;
-  }
-
-  .row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
   
   .row::after {

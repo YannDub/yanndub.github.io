@@ -8,7 +8,6 @@
 }
 
 .panel div {
-    padding: 15px;
     margin: 0;
 }
 
@@ -17,8 +16,38 @@
     background-color: #f6f6f6;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    padding: 16px;
+}
+
+.left {
+    border-right: 1px solid #f4f4f4;
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+}
+
+.project-toggle {
+    color: lightgray;
+}
+
+.project-toggle a:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.panel-content {
+    padding: 16px;
 }
 
 .panel h1 {
     margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .right {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }

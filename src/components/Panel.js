@@ -8,10 +8,8 @@ export default class Panel extends React.Component {
             <div className="row row-title">
                 <h1 className="panel-title">{this.props.title}</h1>
             </div>
-            <div className="row">
-                <div className="panel-content">
-                    {this.props.children}
-                </div>
+            <div className="row panel-content">
+                {this.props.children}
             </div>
         </div>
         )

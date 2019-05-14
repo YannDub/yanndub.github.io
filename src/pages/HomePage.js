@@ -11,6 +11,8 @@ export default class HomePage extends React.Component {
 
     render() {
         return (
+            <div>
+
                 <div className="row">
                     <div className="col-2"></div>
                     <div className="col-8">
@@ -20,6 +22,16 @@ export default class HomePage extends React.Component {
                     </div>
                     <div className="col-2"></div>
                 </div>
+                <div className="row">
+                    <div className="col-2"></div>
+                    <div className="col-8">
+                        <Panel title={index.coord.title}>
+                            <ReackMarkdown source={jsonToMarkdown(index.coord.text)}/>
+                        </Panel>
+                    </div>
+                    <div className="col-2"></div>
+                </div>
+            </div>
         )
     }
 }

@@ -1,26 +1,27 @@
 import React from 'react'
 import SeparatorMenu from './SeparatorMenu';
+import {Link} from 'react-router-dom'
 
 export default class HeaderMenu extends React.Component {
 
     render() {
         return (
-        <header className="row">
+        <header className="row topnav">
             <div className="col-1"></div>
-            <div className="col-2">
+            <div className="col-2 nav">
                 <ul>
-                    <li><a href="/actus/">Actualité</a></li>
+                    <li><Link to="/actus/">Actualité</Link></li>
                 </ul>
             </div>
             <SeparatorMenu />
             <div className="col-4 title">
-                <a href="/">YannDub</a>
+                <Link to="/">YannDub</Link>
             </div>
             <SeparatorMenu />
-            <div className="col-2">
+            <div className="col-2 nav">
                 <ul>
-                    <li><a href="/cv/">CV</a></li>
-                    <li><a href="/projects/">Projets</a></li>
+                    <li><Link to="/cv/">CV</Link></li>
+                    <li><Link to="/projects/">Projets</Link></li>
                 </ul>
             </div>
             <div className="col-1"></div>

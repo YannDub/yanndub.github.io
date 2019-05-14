@@ -1,16 +1,17 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import {HashRouter, Route} from 'react-router-dom'
 
 import HeaderMenu from "./components/HeaderMenu"
 import HomePage from "./pages/HomePage";
 import ActuPage from './pages/ActuPage';
 import CVPage from './pages/CVPage';
 import ProjectsPage from './pages/ProjectsPage';
+import Footer from './components/Footer';
 
 class App extends React.Component {
   render() {
     return (
-      <Router>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <div>
           <HeaderMenu />
 
@@ -18,8 +19,10 @@ class App extends React.Component {
           <Route path="/actus/" exact component={ActuPage}/>
           <Route path="/cv/" exact component={CVPage}/>
           <Route path="/projects/" exact component={ProjectsPage}/>
+
+          <Footer />
         </div>
-      </Router>
+      </HashRouter>
     );
   }
 }
