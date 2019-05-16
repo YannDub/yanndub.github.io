@@ -41,6 +41,7 @@ export default class HeaderMenu extends React.Component {
                     </div>
                     <div className="row menu hidden">
                         <ul>
+                            <li><Link to="/">Accueil</Link></li>
                             <li><Link to="/actus/">Actualité</Link></li>
                             <li><Link to="/cv/">CV</Link></li>
                             <li><Link to="/projects/">Projets</Link></li>
