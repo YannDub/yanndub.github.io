@@ -49,6 +49,11 @@
     margin: 0;
 }
 
+iframe {
+    width: 100%;
+    height: auto;
+}
+
 @media only screen and (min-width: 768px) {
     .right {
         padding-left: 16px;

@@ -2,6 +2,7 @@ import Panel from "./Panel";
 import React from 'react'
 
 import ReactMarkdown from 'react-markdown';
+import Youtube from 'react-youtube';
 
 export default class ProjectPanel extends React.Component {
 
@@ -18,14 +19,15 @@ export default class ProjectPanel extends React.Component {
 
     render() {
         let text = this.state.hidden ? "" : <div className="row project-text"><ReactMarkdown source={this.props.text} /></div>
+        let media = this.props.youtube ? <Youtube videoId={this.props.youtube}/> : <img src={this.props.img} />;
 
         return (
             <Panel title={this.props.title}>
                 <div className="row">
-                    <div className="col-4 left">
-                        <img src={this.props.img} />
+                    <div className="col-6 left">
+                        {media}
                     </div>
-                    <div className="col-8 right">
+                    <div className="col-6 right">
                         <ReactMarkdown source={this.props.resume}/>
                     </div>
                 </div>

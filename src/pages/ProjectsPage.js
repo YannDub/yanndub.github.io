@@ -10,7 +10,7 @@ export default class ProjectsPage extends React.Component {
             return <div key={key} className="row">
                 <div className="col-2"></div>
                 <div className="col-8">
-                    <ProjectPanel title={obj.title} resume={jsonToMarkdown(obj.resume)} img={obj.img} text={jsonToMarkdown(obj.text)}/>
+                    <ProjectPanel title={obj.title} resume={jsonToMarkdown(obj.resume)} img={obj.img} youtube={obj.youtube} text={jsonToMarkdown(obj.text)}/>
                 </div>
                 <div className="col-2"></div>
             </div>
