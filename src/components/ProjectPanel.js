@@ -21,11 +21,13 @@ export default class ProjectPanel extends React.Component {
 
         return (
             <Panel title={this.props.title}>
-                <div className="col-4 left">
-                    <img src={this.props.img} />
-                </div>
-                <div className="col-8 right">
-                    <ReactMarkdown source={this.props.resume}/>
+                <div className="row">
+                    <div className="col-4 left">
+                        <img src={this.props.img} />
+                    </div>
+                    <div className="col-8 right">
+                        <ReactMarkdown source={this.props.resume}/>
+                    </div>
                 </div>
                 <div className="row project-toggle">
                     <div className="col-10"></div>

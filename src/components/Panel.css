@@ -30,6 +30,10 @@
 
 .project-toggle {
     color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .project-toggle a:hover {
