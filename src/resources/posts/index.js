@@ -1,0 +1,1 @@
+export default async (file) => await (await fetch(file)).text()

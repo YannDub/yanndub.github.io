@@ -1,0 +1,1 @@
+Xorn: the fallen god est le jeu dont je suis le plus fier d'avoir participé. C'est le premier jeu fait en équipe, nous étions quatre, deux développeurs, un game designer et un graphiste. Je me suis principalement concentré sur l'intelligence artificielle et quelques éléments de gameplay.

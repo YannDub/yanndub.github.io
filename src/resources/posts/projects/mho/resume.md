@@ -1,0 +1,1 @@
+Minecraft Hardcore a grandement fait partie de mes décisions concernant mon orientation. Ayant appris à programmer en modifiant le jeu Minecraft, Minecraft Hardcore m'a apporté, au travers ses différentes saisons, de la matière concernant mon apprentissage dans le domaine tout en faisant partie d'une équipe régulièrement renouveler
