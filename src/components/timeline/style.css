@@ -16,15 +16,18 @@
     background-color: var(--color);
     top: 0;
     bottom: 0;
-    left: 50%;
+    left: 31px;
     margin-left: -3px;
 }
 
 .timeline-container {
-    padding: 10px 40px;
     position: relative;
-    width: 50%;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
     background-color: inherit;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .timeline-container::after {
@@ -40,42 +43,17 @@
     z-index: 1;
 }
 
-.timeline-left {
-    left: 0;
-}
-
-.timeline-right {
-    left: 50%;
-}
-
-.timeline-left::before {
+.timeline-container::before {
     content: " ";
     position: absolute;
     height: 0;
     width: 0;
-    right: 30px;
+    left: 60px;
     top: calc(50% - 10px);
-    border: medium solid var(--primary-color);
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent var(--primary-color);
-    z-index: 1;
-}
-
-.timeline-right::before {
-    content: " ";
-    position: absolute;
-    height: 0;
-    width: 0;
-    left: 30px;
-    top: calc(50% - 10px);
-    border: medium solid var(--primary-color);
+    border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent var(--primary-color) transparent transparent;
     z-index: 1;
-}
-
-.timeline-right::after {
-    left: -17px;
 }
 
 .timeline-content {
@@ -84,6 +62,14 @@
     background-color: var(--primary-color);
     color: var(--color-on-primary);
     border-radius: 6px;
+}
+
+.timeline-left::after, .timeline-right::after {
+    left: 15px;
+}
+
+.timeline-right {
+    left: 0;
 }
 
 .date {
@@ -98,4 +84,58 @@ a {
 a:hover {
     color: var(--important-color-hover);
     cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .timeline::after {
+        left: 50%;
+    }
+
+    .timeline-container {
+        width: 50%;
+        padding: 10px 40px;
+    }
+
+    .timeline-left::before {
+        content: " ";
+        position: absolute;
+        height: 0;
+        width: 0;
+        left: calc(100% - 40px);
+        right: 30px;
+        top: calc(50% - 10px);
+        border: medium solid var(--primary-color);
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent var(--primary-color);
+        z-index: 1;
+    }
+    
+    .timeline-right::before {
+        content: " ";
+        position: absolute;
+        height: 0;
+        width: 0;
+        left: 30px;
+        top: calc(50% - 10px);
+        border: medium solid var(--primary-color);
+        border-width: 10px 10px 10px 0;
+        border-color: transparent var(--primary-color) transparent transparent;
+        z-index: 1;
+    }
+
+    .timeline-left {
+        left: 0;
+    }
+    
+    .timeline-right {
+        left: 50%;
+    }
+    
+    .timeline-right::after {
+        left: -17px;
+    }
+
+    .timeline-left::after {
+        left: calc(100% - 17px);
+    }
 }
