@@ -1,0 +1,101 @@
+@import url("../../variables.css");
+
+* {
+    box-sizing: border-box;
+}
+
+.timeline {
+    position: relative;
+    margin: 16px auto;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: var(--color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    background-color: inherit;
+}
+
+.timeline-container::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: var(--background-color);
+    right: -17px;
+    top: calc(50% - 17px);
+    border-radius: 50%;
+    border: 4px solid var(--important-color);
+    z-index: 1;
+}
+
+.timeline-left {
+    left: 0;
+}
+
+.timeline-right {
+    left: 50%;
+}
+
+.timeline-left::before {
+    content: " ";
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: 30px;
+    top: calc(50% - 10px);
+    border: medium solid var(--primary-color);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--primary-color);
+    z-index: 1;
+}
+
+.timeline-right::before {
+    content: " ";
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 30px;
+    top: calc(50% - 10px);
+    border: medium solid var(--primary-color);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--primary-color) transparent transparent;
+    z-index: 1;
+}
+
+.timeline-right::after {
+    left: -17px;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    position: relative;
+    background-color: var(--primary-color);
+    color: var(--color-on-primary);
+    border-radius: 6px;
+}
+
+.date {
+    color: var(--important-color);
+}
+
+a {
+    font-weight: 400;
+    color: var(--important-color);
+}
+
+a:hover {
+    color: var(--important-color-hover);
+    cursor: pointer;
+}

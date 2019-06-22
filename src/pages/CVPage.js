@@ -1,10 +1,13 @@
-import React from 'react'
-import Panel from '../components/panels/Panel';
+import React from 'react';
+import Timeline from '../components/timeline/Timeline';
+import cv from '../resources/posts/cv';
 
 export default class CVPage extends React.Component {
     render() {
-        return <Panel title="To Do">
-            Non disponible pour le moment
-        </Panel>
+        return <div>
+            <div class="row">
+                <Timeline timeline={cv.timeline}/>
+            </div>
+        </div>
     }
 }
