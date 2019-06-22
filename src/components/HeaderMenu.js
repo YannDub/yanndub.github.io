@@ -15,24 +15,17 @@ export default class HeaderMenu extends React.Component {
         return (
             <header className="row">
                 <div className="col-12 desktop">
-                    <div className="col-1"></div>
-                    <div className="col-2 nav">
-                        <ul>
-                            <li><Link to="/actus/">Actualité</Link></li>
-                        </ul>
-                    </div>
-                    <SeparatorMenu />
-                    <div className="col-4 title">
+                    <div className="col-2 title">
                         <Link to="/">YannDub</Link>
                     </div>
-                    <SeparatorMenu />
+                    <div className="col-8">
+                    </div>
                     <div className="col-2 nav">
                         <ul>
                             <li><Link to="/cv/">CV</Link></li>
                             <li><Link to="/projects/">Projets</Link></li>
                         </ul>
                     </div>
-                    <div className="col-1"></div>
                 </div>
 
                 <div className="col-12 responsive">
@@ -42,7 +35,6 @@ export default class HeaderMenu extends React.Component {
                     <div className="row menu hidden">
                         <ul>
                             <li><Link to="/">Accueil</Link></li>
-                            <li><Link to="/actus/">Actualité</Link></li>
                             <li><Link to="/cv/">CV</Link></li>
                             <li><Link to="/projects/">Projets</Link></li>
                         </ul>
