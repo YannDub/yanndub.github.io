@@ -21,6 +21,36 @@
     border-top-right-radius: 5px;
     padding: 16px;
     color: var(--color-on-primary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon {
+    position: relative;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--important-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.icon::after {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    border: medium solid var(--background-color);
+    border-width: 1px;
+    border-radius: 50%;
+    z-index: 1;
+    left: calc(15% - 4px);
+    top: calc(15% - 4px);
+}
+
+.panel-title {
+    padding-left: 8px;
 }
 
 .left {

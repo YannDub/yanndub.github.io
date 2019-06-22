@@ -21,8 +21,17 @@ export default class ProjectPanel extends React.Component {
         let text = this.state.hidden ? "" : <div className="row project-text"><ReactMarkdown source={this.props.text} /></div>
         let media = this.props.youtube ? <Youtube videoId={this.props.youtube}/> : <img src={this.props.img} />;
 
+        let icon = null;
+        switch(this.props.type) {
+            case "game":
+                icon = "gamepad";
+                break;
+            default:
+                icon = null;
+        }
+
         return (
-            <Panel title={this.props.title}>
+            <Panel title={this.props.title} icon={icon}>
                 <div className="row">
                     <div className="col-6 left">
                         {media}
