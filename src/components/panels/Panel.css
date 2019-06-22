@@ -1,10 +1,13 @@
+@import url("../../variables.css");
+
 .panel {
-    background-color: #fff;
+    background-color: var(--background-color);
     display: block;
     border-radius: 5px;
-    box-shadow: 1px 1px 4px 1px rgba(0,0,0,.1);
+    box-shadow: 1px 1px 16px 1px rgba(0,0,0,.4);
     position: relative;
     margin: 20px;
+    color: var(--color);
 }
 
 .panel div {
@@ -13,10 +16,11 @@
 
 .panel .row-title {
     border-bottom: 1px solid #f4f4f4;
-    background-color: #f6f6f6;
+    background-color: var(--primary-color);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     padding: 16px;
+    color: var(--color-on-primary);
 }
 
 .left {
@@ -29,7 +33,7 @@
 }
 
 .project-toggle {
-    color: lightgray;
+    color: var(--important-color);
     display: flex;
     justify-content: center;
     align-content: center;
@@ -37,7 +41,7 @@
 }
 
 .project-toggle a:hover {
-    color: gray;
+    color: var(--important-color-hover);
     cursor: pointer;
 }
 
@@ -52,6 +56,10 @@
 iframe {
     width: 100%;
     height: 240px;
+}
+
+strong {
+    color: var(--important-color);
 }
 
 @media only screen and (min-width: 768px) {

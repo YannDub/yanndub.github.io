@@ -1,6 +1,8 @@
+@import url("./variables.css");
+
 header {
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  background-color: var(--primary-color);
+  box-shadow: 1px 1px 16px 0 rgba(0,0,0,.4);
   z-index: 3;
   width: 100%;
   top: 0;
@@ -12,7 +14,6 @@ header div {
 
 header a {
   text-decoration: none;
-  color: #444;
 }
 
 header .title {
@@ -24,11 +25,13 @@ header .title {
 
 header .title a {
   display: block;
+  color: var(--color-on-primary);
 }
 
 header .separator {
   font-weight: bold;
   font-size: 32px;
+  color: var(--color-on-primary);
 }
 
 header ul {
@@ -42,13 +45,15 @@ header ul {
 header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
   text-decoration: none;
-  color: black;
+  color: var(--color-on-primary);
+  font-weight: 400;
+  font-size: 24px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 header li a:hover {
-  background-color: #f4f4f4;
+  background-color: var(--hover-primary-color);
 }
 
 .desktop {
@@ -69,13 +74,20 @@ header li a:hover {
   display: block;
 }
 
+.responsive .nav span {
+  color: var(--color-on-primary);
+  font-weight: bold;
+  font-size: 24px;
+}
+
 .responsive .menu li {
   border-bottom: 1px solid lightgrey;
 }
 
 footer {
-  background-color: #fff;
+  background-color: var(--primary-color);
   padding: 20px;
+  color: var(--color-on-primary);
 }
 
 @media only screen and (min-width: 768px) {
