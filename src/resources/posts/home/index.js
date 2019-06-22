@@ -1,7 +1,7 @@
 import markdown from '../'
 
 export default async () => ({
-    title: "Bienvenue sur mon site !",
+    title: "Yann Dubois, développeur",
     text: await markdown(require("./main.md")),
     coord: {
         title: "Coordonnées",
