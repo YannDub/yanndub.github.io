@@ -2,7 +2,7 @@ import React from 'react'
 import ReackMarkdown from "react-markdown";
 
 import '../App.css';
-import Panel from "../components/Panel";
+import Panel from "../components/panels/Panel";
 
 import index from '../resources/posts/home'
 
