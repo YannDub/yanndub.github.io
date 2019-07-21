@@ -14,7 +14,7 @@
 
 .rbar-content .label {
     display: block;
-    font-size: 4em;
+    font-size: 2rem;
     color: var(--important-color);
     font-weight: 300;
     cursor: default;

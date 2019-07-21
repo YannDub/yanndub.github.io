@@ -2,8 +2,9 @@
 
 .card {
     box-shadow: 0 6px 6px rgba(0,0,0,0.2);
-    width: 85%;
-    margin: 0 auto;
+    display: inline-block;
+    width: 300px;
+    margin: 8px;
     padding: 8px;
     background-color: var(--primary-color);
     border-radius: 3px;

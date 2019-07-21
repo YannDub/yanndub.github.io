@@ -42,5 +42,65 @@ export default {
                 "Mention très bien"
             ]
         },
+    ],
+    skills: [
+        {
+            title: "Langages de programmation",
+            items: [
+                {
+                    skillName: "Javascript et variante",
+                    skillAmount: "expert"
+                }, 
+                {
+                    skillName: "Java",
+                    skillAmount: "expert"
+                },
+                {
+                    skillName: "C/C++",
+                    skillAmount: "avancé"
+                },
+                {
+                    skillName: "C#",
+                    skillAmount: "avancé"
+                },
+                {
+                    skillName: "Lua",
+                    skillAmount: "intermédiaire"
+                }, 
+                {
+                    skillName: "Python",
+                    skillAmount: "intermédiaire"
+                },
+                {
+                    skillName: "Go",
+                    skillAmount: "débutant"
+                }
+            ]
+        },
+        {
+            title: "Technologie",
+            items: [
+                {
+                    skillName: "React/React native",
+                    skillAmount: "avancé"
+                },
+                {
+                    skillName: "Electron",
+                    skillAmount: "avancé"
+                },
+                {
+                    skillName: "OpenGL",
+                    skillAmount: "avancé"
+                },
+                {
+                    skillName: "Unity",
+                    skillAmount: "avancé"
+                },
+                {
+                    skillName: "TensorFlow",
+                    skillAmount: "intermédiaire"
+                }
+            ]
+        }
     ]
 }
