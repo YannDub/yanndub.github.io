@@ -1,5 +1,5 @@
 import React from 'react';
-import Timeline from '../components/timeline/Timeline';
+import Timeline from '../components/Timeline';
 import cv from '../resources/posts/cv';
 
 export default class CVPage extends React.Component {

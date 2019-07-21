@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectPanel from '../components/panels/ProjectPanel';
+import ProjectPanel from '../components/ProjectPanel';
 
 import projects from '../resources/posts/projects';
 

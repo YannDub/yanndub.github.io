@@ -1,8 +1,9 @@
-import Panel from "./Panel";
+import Panel from "../Panel";
 import React from 'react'
 
 import ReactMarkdown from 'react-markdown';
 import Youtube from 'react-youtube';
+import './ProjectPanel.css'
 
 export default class ProjectPanel extends React.Component {
 
@@ -33,10 +34,10 @@ export default class ProjectPanel extends React.Component {
         return (
             <Panel title={this.props.title} icon={icon}>
                 <div className="row">
-                    <div className="col-6 left">
+                    <div className="col-6 project-panel-left">
                         {media}
                     </div>
-                    <div className="col-6 right">
+                    <div className="col-6 project-panel-right">
                         <ReactMarkdown source={this.props.resume}/>
                     </div>
                 </div>

@@ -1,0 +1,30 @@
+@import url("../../variables.css");
+
+.project-toggle {
+    color: var(--important-color);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.project-toggle a:hover {
+    color: var(--important-color-hover);
+    cursor: pointer;
+}
+
+.project-panel-left {
+    border-right: 1px solid #f4f4f4;
+}
+
+.project-panel-left img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .project-panel-right {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

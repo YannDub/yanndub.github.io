@@ -53,28 +53,6 @@
     padding-left: 8px;
 }
 
-.left {
-    border-right: 1px solid #f4f4f4;
-}
-
-.left img {
-    width: 100%;
-    height: auto;
-}
-
-.project-toggle {
-    color: var(--important-color);
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.project-toggle a:hover {
-    color: var(--important-color-hover);
-    cursor: pointer;
-}
-
 .panel-content {
     padding: 16px;
 }
@@ -90,11 +68,4 @@ iframe {
 
 strong {
     color: var(--important-color);
-}
-
-@media only screen and (min-width: 768px) {
-    .right {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
 }

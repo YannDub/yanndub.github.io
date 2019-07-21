@@ -1,5 +1,5 @@
 import React from 'react'
-import SeparatorMenu from './SeparatorMenu';
+import SeparatorMenu from '../SeparatorMenu/';
 import {Link} from 'react-router-dom'
 
 export default class HeaderMenu extends React.Component {
