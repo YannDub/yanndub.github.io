@@ -1,0 +1,58 @@
+@import url('../../variables.css');
+
+.rbar-content {
+    position: relative;
+    border: 10px solid var(--secondary-color);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rbar-content .label {
+    display: block;
+    font-size: 4em;
+    color: var(--important-color);
+    font-weight: 300;
+    cursor: default;
+}
+
+.rbar-content .rbar-pie {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.rbar-content .rbar-pie .rbar-half {
+    border: 10px solid var(--important-color);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.rbar-content.rbar-25 .rbar-pie .rbar-left {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 50%);
+}
+
+.rbar-content.rbar-50 .rbar-pie .rbar-left,
+.rbar-content.rbar-75 .rbar-pie .rbar-left,
+.rbar-content.rbar-100 .rbar-pie .rbar-left {
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+}
+
+.rbar-content.rbar-25 .rbar-pie .rbar-right,
+.rbar-content.rbar-50 .rbar-pie .rbar-right {
+    display: none;
+}
+
+.rbar-content.rbar-75 .rbar-pie .rbar-right {
+    clip-path: polygon(0% 50%, 50% 50%, 50% 100%, 0% 100%);
+}
+
+.rbar-content.rbar-100 .rbar-pie .rbar-right {
+    clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+}

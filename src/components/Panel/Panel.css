@@ -10,10 +10,6 @@
     color: var(--color);
 }
 
-.panel div {
-    margin: 0;
-}
-
 .panel .row-title {
     border-bottom: 1px solid #f4f4f4;
     background-color: var(--primary-color);
